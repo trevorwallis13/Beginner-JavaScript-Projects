@@ -12,7 +12,7 @@ Random button selects a random reviewer from the list without showing the same p
 
 ## Ideas for next phase
 
-Create a second page (linked in <nav>) to intake reviews.
+Create a second page (linked in nav) to intake reviews.
 
 ## Long term ideas
 
