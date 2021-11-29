@@ -54,6 +54,18 @@ const randomBtn = document.querySelector(".random-btn");
 
 let current = 0;
 
+// Load the first review once the window loads
+
+window.addEventListener("DOMContentLoaded", () => {
+
+  let item = reviews[current];
+
+  img.src = item.img;
+  author.textContent = item.author;
+  job.textContent = item.job;
+  info.textContent = item.info;
+})
+
 // Previous button decreases current by 1 and updates DOM
 
 prevBtn.addEventListener("click", () => {
