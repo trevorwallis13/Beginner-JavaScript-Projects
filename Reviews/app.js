@@ -72,7 +72,7 @@ function updateReview(index) {
 window.addEventListener("DOMContentLoaded", () => {
 
   updateReview(current);
-})
+});
 
 // Previous button decreases current by 1 and updates DOM
 
@@ -86,21 +86,21 @@ prevBtn.addEventListener("click", () => {
 
   updateReview(current);
 
-})
+});
 
 // Next button increases current and updates DOM
 
 nextBtn.addEventListener("click", () => {
 
   if(current === reviews.length - 1) {
-    current = 0;
+    current = 0; 
   } else {
     current ++;
   };
 
   updateReview(current);
 
-})
+});
 
 // Random buttom selects a random review from the array
 // New review will be different than current 
