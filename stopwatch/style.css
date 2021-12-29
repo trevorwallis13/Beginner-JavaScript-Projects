@@ -34,6 +34,13 @@ body {
     flex-direction: column;
 }
 
+@media (max-width: 200px) {
+    .stopwatch-container {
+        padding: 0;
+    }
+    
+}
+
 .timer-display {
     text-align: right;
     padding: 1em .5em;
@@ -49,7 +56,10 @@ body {
 
 button {
     background-color: rgb(219, 114, 54);
-    padding: .5em 2em;
+    font-weight: bold;
+    font-size: clamp(.8em, 5vw, 1.2em);
+    padding: .7em .5em;
+    max-width: 100%;
     flex: 1;
     border: none;
     border-radius: 5px;
