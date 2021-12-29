@@ -12,8 +12,8 @@
 
 //select display elements
 
-const lapTimeDisp = document.querySelector('.lap-time');
-const totalTimeDisp = document.querySelector('.total-time');
+const lapTimeDisp = document.querySelector('.lap-timer');
+const totalTimeDisp = document.querySelector('.total-timer');
 
 //select button elements
 
@@ -79,7 +79,7 @@ lapBtn.addEventListener('click', () => {
     let lapTime = formatTime(lapTimeCount);
     lapTimeCount = 0;
 
-    if(lapTimeCount > 0) {
+    if(totalTimeCount > 0) {
         createLapRow(lapNumber, lapTime);
         lapNumber++;
     }
